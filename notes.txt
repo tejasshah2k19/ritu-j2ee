@@ -1,0 +1,51 @@
+
+
+when user submit html page using  form =>  
+
+
+facebook.com -> Signup.html -> user fill data -> submit -> request -> server { accept } 
+
+server -> read data -> some logic -> process ->   response { valid response | inValid response } 
+
+
+
+server always accept request from user 
+and 
+server always give response to the user 
+
+   request response life cycle -> 
+   
+   
+   user -> request -> server -> response -> user 
+   
+   
+   resource ? request process -> j2ee -> advjava --> servlet 
+   
+   SERVLET 
+   
+   how to create servlet ? 
+   
+   class A extends HttpServlet 
+   
+   
+   1) extends HttpServlet 
+   2) logic -> override -> service() 
+   3) mapping -> url pattern
+   
+   
+ how to add servlet-api.jar 
+ 	1) tomcat-lib directory 
+ 	2) web  { download } 
+   
+   http-> hyper text transfer protocol -> website -> www 
+   
+   
+   
+   if you create 10 servlet then you must have to follow above steps 10 times 
+   		web.xml has all 10 servlet mapping
+   	
+   	
+   	
+   	
+   	
+   
