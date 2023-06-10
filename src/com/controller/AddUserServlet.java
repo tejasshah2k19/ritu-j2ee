@@ -1,66 +1,58 @@
 package com.controller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class SignupServlet extends HttpServlet {
+@WebServlet("/AddUserServlet")
+public class AddUserServlet extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		System.out.println("inSide SignupServlet");
-
 		String firstName = request.getParameter("firstName");
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
-
-		// print on the browser -->
-
-		// old - 1947 -> print writer ->
-
-		// how to send response ?
 
 		boolean isError = false; // there is no error initially
 		String error = "";
 		if (firstName == null || firstName.trim().length() == 0) {
 			isError = true;
 			error += "Please Enter FirstName<br>";
+			request.setAttribute("firstNameError", "Please Enter FirstName");
+		} else {
+			request.setAttribute("firstNameValue", firstName);
 		}
 
 		if (email == null || email.trim().length() == 0) {
 			isError = true;
 			error += "Please Enter Email<br>";
+			request.setAttribute("emailError", "Please Enter Email");
+		} else {
+			request.setAttribute("emailValue", email);
 		}
 
 		if (password == null || password.trim().length() == 0) {
 			isError = true;
 			error += "Please Enter Password<br>";
+			request.setAttribute("passwordError", "Please Enter Password");
 		}
 
-		response.setContentType("text/html");// html -> MIME
+		if (isError) {
 
-		// open stream -> server - client
+			request.setAttribute("error", error);// key , value
 
-		PrintWriter out = response.getWriter(); // stream -> server-->client
+			RequestDispatcher rd = request.getRequestDispatcher("AddUser.jsp");// dispatch to Registration.html
+			rd.forward(request, response);// go
 
-		out.print("<html><body>");
-
-		if (isError == true) {
-			out.print("<font color='red'>"+error+"</font>");
-			
-			
 		} else {
-
-			out.print("FirstName : " + firstName + "<br>");
-			out.print("Email : " + email + "<br>");
-			out.print("Password : " + password + "<br>");
-
+			// goto login page
 		}
-		out.print("</body></html>");
+
 	}
 }

@@ -44,6 +44,61 @@ server always give response to the user
    if you create 10 servlet then you must have to follow above steps 10 times 
    		web.xml has all 10 servlet mapping
    	
+--------------------------------------------------------------------------------------------
+
+we have validation login in servlet - java file 
+we set error variable in java file - servlet 
+
+we need to print those error on signup page , which an html file 
+
+can html read java variable - error ? no html does not know java or any programming language 
+
+we can't write any java login on html page ,  none of variable or any kind of java logic will work in
+html file. 
+
+
+then how to write java stuff on html file? 
+
+for this they introduce JSP. 
+java server pages / java servlet pages 
+
+so now we are going to create jsp file instead of html file 
+
+jsp => html + java 
+
+jsp supports both html and java so we can write html stuff as well as java stuff on JSP page. 
+
+by default jsp accept HTML , if you want to write java stuff  you have to add some notations 
+
+1)scriptlet <% %> 
+2)expression <%= %>
+3)declaration <%! %> 
+
+
+scriptlet is used to write java code -- any java code 
+expression is used to print java variable -- any variable within the scope 
+declaration is used to declare  instance variable
+
+
+JSP has 9 implicit objects-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    	
    	
    	
