@@ -81,12 +81,21 @@ declaration is used to declare  instance variable
 
 
 JSP has 9 implicit objects-->
+------------------------------------------------------------
+
+filter 
+
+1) class implements Filter 
+2) override -> filter -> logic 
+3) web.xml mapping | annotation 
 
 
+client => request ==>   server => Filter |  {servlet} 
+
+AddProduct -> validation 
 
 
-
-
+EL -> expression language 
 
 
 
