@@ -98,6 +98,46 @@ AddProduct -> validation
 EL -> expression language 
 
 
+-------------------------------------------------------------------
+
+1) load class 
+2) create instance
+3) init() : db , aws ,maps 
+4) service() : logic  {doGet ,doPost}
+5) destroy() : 
+
+-------------------------------------------------------------------
+
+JDBC - CRUD 
+
+-------------------
+
+
+to store the user's info 
+
+they have two storage 
+
+cookie -> browser -> 
+
+session -> server -> 
+
+
+privacy - security - password cvv otp -> 
+
+
+cookie 
+
+session 
+
+
+
+
+
+
+
+
+
+
 
 
 
