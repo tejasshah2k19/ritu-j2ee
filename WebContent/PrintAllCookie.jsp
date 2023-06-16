@@ -4,15 +4,20 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Print All Cookie</title>
 </head>
 <body>
 
-Welcome , ${cookie.userName.value }
+<%
+	Cookie c[] = (Cookie[]) request.getAttribute("allCookie");
+	
+%>
 
-<bR><BR>
-		<a href="AddCookie.jsp">Add Cookie</a><br>
-		
-		<a href="ListCookieServlet">ListCookieServlet</a>
+<%for(Cookie x:c){ %>
+	
+		<%=x.getName() %> : <%=x.getValue() %> <br>
+
+<%} %>
+
 </body>
 </html>
