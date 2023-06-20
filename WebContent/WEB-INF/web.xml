@@ -35,4 +35,9 @@
     <servlet-name>ListCookieServlet</servlet-name>
     <url-pattern>/ListCookieServlet</url-pattern>
   </servlet-mapping>
+
+	<session-config>
+		<session-timeout>5</session-timeout>
+	</session-config>
+
 </web-app>
