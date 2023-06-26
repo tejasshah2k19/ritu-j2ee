@@ -185,13 +185,38 @@ ritu -> request ---- >  server --> session ?   no 				memory { t:1 , r:2 , d:3 }
 					
 	web.xml 
 		
+---------------------------------------------------------------------
+
+user --> request ---------------->  server  ---> 	memory session ---> id 12345 
+user<----browser---response<---------------------------------------JSESSIONID 12345 
+
+user --> request ------JSESSIONID------> server ------>  memory session -> id ? yes   
 
 
 
+user1		->  12{name}
+	session name 
+user2		->	22{uname} 
+	session uname 
+user3		->	32
+user4 		->	42
 
 
+-------------------------------------------------------------------------------
+Login.jsp > email password -> LoginServlet -> read authenticate ->  true -> {cookie:islogin:true } Home.jsp 
+browser close 
+open -> Home.jsp -> it will open -> click on logout link -> Login.jsp 
+browser close 
+open -> Home.jsp -> it will not open -> redirec Login.jsp 
+h o p madd 
+---------------------------------------------------------------------------------
+req -> filter | home.jsp 
+--------------------------------------------------------------------------------- 
 
-			
+Listener -> listen the event and perform the task
+
+1) class implements XXXListener 
+2) web.xml -> map 			
 						
 			
  
