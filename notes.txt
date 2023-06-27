@@ -218,8 +218,27 @@ Listener -> listen the event and perform the task
 1) class implements XXXListener 
 2) web.xml -> map 			
 						
-			
+---------------------------------------------------------
+isErrorPage , errorPage 
+---------------------------------------------------------
+						
+reusable web component -> inclusion -> adding something into something 
+
+Header.jsp 
+Footer.jsp 
  
+ 
+Home.jsp 
+	include Header.jsp 
+		content 
+	include Footer.jsp 
+
+1) static inclusion   <%@ include file=""   %>   -> all your code is copied into included jsp 
+	{header.jsp 4 line , home.jsp 3 , inclusion -> header.jsp 4 line copy -> home.jsp{3+4}  }
+2) dynamic inclusion  <jsp:include page=""  /> 
+	{it will not copy code into included jsp => but it redirect and get the output only } 
+			
+---------------------------------------------- 
 			
 			
 							
