@@ -313,8 +313,41 @@ usebean -> class -> object-> session -> set and get
 --------------------------------------------------
 
 
+tag -> user define tag 
+
+<b> <i> 
+
+<greet>  <currency src="inr" dest="usd" amt="123">  <max> 
 
 
+1) jsp standard action -> jstl -> 
+2) custom tag 
+
+JSTL --> 1) core
+		 2) fmt 
+		 3) xml 
+		 4) sql 
+		 5) function 
+		 
+		 
+jstl.jar -> class -> tag 
+1) download jstl.jar and add in your class path => add jar 
+2) import in jsp using taglib 		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		
 
 
 
