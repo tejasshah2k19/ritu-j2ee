@@ -240,8 +240,101 @@ Home.jsp
 			
 ---------------------------------------------- 
 			
-			
+signup -> user 
+login -> user , admin 
+admin -> subject , difficulty, questions , exam , users 
+user ->  attemp exam , custom exam , result , 
+forgetpassword , myprofile ,change password 
+
+
+jee, java8 , mysql ,jsp + bootstrap 
+--------------------------------------------------  			
 							
+jsp -> java servlet pages 
+
+.jsp  | .java 
+
+1) translation  .jsp -> .java 
+2) compilation  .java -> .class 
+3) load class
+4) create instance 
+5) jspInit() 
+6) _jspService() { code } 
+7) jspDestroy() 
+
+
+jsp -> 9 implicit objects 
+
+page 
+pageContext 
+request
+response
+session
+config 
+application 
+out 
+exception*
+
+
+---------------------------------------------------------
+
+EL - expression language is used to print something on jsp page 
+
+${ } 
+
+${5-6}  ${7 gt 8}  ${3/0} 
+
+${error} -> page , request , session ,application 
+
+page -> current page 
+request-> setAttribute() 1 -- 2  
+session -> you will in all pages for sepcific user 
+application -> you will get in all pages  but its commmon for all users 
+
+${sessionScope.error} 
+------------------------------------------------------------------
+EL function -> 
+
+		1) function class-> Logic 
+		2) tld file -> mapping  { WEB-INF} 
+		3) web.xml -> tld map 
+		4) use in jsp -> import 
+		
+		
+		
+		greet() -> time -> Good Mornig , GF , GE 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 				
 				

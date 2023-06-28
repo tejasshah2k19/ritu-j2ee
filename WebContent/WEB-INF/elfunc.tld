@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<taglib>
+
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.0</jsp-version>
+	<short-name>utitlityFunction</short-name>
+	<uri>www.royal.com/ritu/elfunc</uri>
+	<function>
+		<name>greet</name>
+		<function-class>com.elfun.GreetFun</function-class>
+		<function-signature>java.lang.String greet()</function-signature>
+	</function>
+</taglib>

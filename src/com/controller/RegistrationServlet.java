@@ -29,6 +29,7 @@ public class RegistrationServlet extends HttpServlet
 			error += "Please Enter FirstName<br>";
 		}
 
+		
 		if (email == null || email.trim().length() == 0) {
 			isError = true;
 			error += "Please Enter Email<br>";

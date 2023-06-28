@@ -71,4 +71,14 @@
 		<param-value>supersecret</param-value>
 	</context-param>
 
+
+	<jsp-config>
+		<taglib>
+			<taglib-uri>www.royal.com/ritu/elfunc</taglib-uri>
+			<taglib-location>/WEB-INF/elfunc.tld</taglib-location>
+		</taglib>
+
+	</jsp-config>
+
+
 </web-app>

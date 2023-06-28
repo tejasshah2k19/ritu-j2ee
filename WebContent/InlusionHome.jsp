@@ -7,8 +7,20 @@
 
 </head>
 <body>
+
+	<%!
+		public void jspInit(){
+		
+		}
+	%>
+
+
 	<%@ include file="Header.jsp" %>
 	<%=a %>
+	 
+	  
+	<br>
+	<%out.print(a); %>
 	Welcome to abc.com 
 	<jsp:include page="Footer.jsp"></jsp:include>
 	<%//=k %>
