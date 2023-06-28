@@ -305,7 +305,12 @@ EL function ->
 		greet() -> time -> Good Mornig , GF , GE 
 
 
+----------------------------------------------------
 
+class->object->getters setters-> session Scope -> read 
+
+usebean -> class -> object-> session -> set and get 
+--------------------------------------------------
 
 
 
