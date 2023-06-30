@@ -334,6 +334,58 @@ jstl.jar -> class -> tag
 1) download jstl.jar and add in your class path => add jar 
 2) import in jsp using taglib 		 
 		 
+----------------------------------------------------------
+
+custom tag -> user define tag 
+
+<greet> -> Based on time it will greet -> good morning , good after noon
+<time> 	-> display current time on screen 
+<sqr num="4"/>  -> 16 
+<print count="3">Royal</print> -> print royal 3 time screen 
+<title>royal edu</title> => Royal Edu		 
+		 
+		
+		1)	SimpleTag 
+		2)  ClassicTag 
+		
+
+
+1) tag Handler class ==>  class->logic  { extends SimpleTagSupport } 
+2) doTag() => logic 
+3) .tld => tag info
+4) web.xml -> 
+5) jsp use using import taglib 
+
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
 		 
 		 
 		 

@@ -77,7 +77,11 @@
 			<taglib-uri>www.royal.com/ritu/elfunc</taglib-uri>
 			<taglib-location>/WEB-INF/elfunc.tld</taglib-location>
 		</taglib>
-
+		<taglib>
+			<taglib-uri>www.royal.com/ritu/stag</taglib-uri>
+			<taglib-location>/WEB-INF/stag.tld</taglib-location>
+			 
+		</taglib>
 	</jsp-config>
 
 
