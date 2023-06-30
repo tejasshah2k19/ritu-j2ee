@@ -15,6 +15,8 @@
 <br>
 <c:now/>
 <br>
-<c:print count="4">Royal</c:print>
+<c:print count="4">Royal</c:print><Br><BR>
+
+<c:title>india guj</c:title>
 </body>
 </html>

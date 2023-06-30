@@ -20,4 +20,10 @@
 	 		<rtexpravalue>true</rtexpravalue>
 	 	</attribute>
 	 </tag>
+	 
+	 <tag>
+	 	<name>title</name>
+	 	<tag-class>com.ctag.TitleTag</tag-class>
+		<body-content>JSP</body-content>
+	 </tag>
 </taglib>
