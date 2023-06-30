@@ -10,5 +10,14 @@
 		<body-content>empty</body-content>
 	 </tag>
 	 
-
+	<tag>
+		<name>sqr</name>
+		<tag-class>com.stag.SqrTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>num</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
 </taglib>

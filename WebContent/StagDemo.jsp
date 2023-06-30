@@ -8,7 +8,8 @@
 </head>
 <body>
 
-<s:greet/>
+<s:greet/><Br><Br>
+<s:sqr num="5"/>
 
 </body>
 </html>
