@@ -357,7 +357,9 @@ custom tag -> user define tag
 5) jsp use using import taglib 
 
 		 
-		 
+for classic tag we need to extends TagSupport class 
+ 
+ 		 
 		 
 		 
 		 
